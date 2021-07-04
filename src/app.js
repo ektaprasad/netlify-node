@@ -19,7 +19,7 @@
 // }
 
 const express = require('express');
-const route = require('./routes/route');
+const route = require('../routes/route');
 const app = express();
 const serverless = require('serverless-http');
 

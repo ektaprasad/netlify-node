@@ -10,7 +10,7 @@ const authenticate = async (req,res,next) => {
     next();
 }
 
-router.get('/', authenticate, (req,res) => {
+router.get('/', authenticate, async (req,res) => {
     const result = await api;
     const data = await result.json();    
     res.status(200).send({success:true,data:data.response.docs})
